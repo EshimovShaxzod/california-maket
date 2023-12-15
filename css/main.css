@@ -309,6 +309,22 @@ template {
   display: none;
 }
 
+/* readex-pro-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Readex Pro";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/readex-pro-v21-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inter-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/inter-v13-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -350,7 +366,93 @@ a {
 /* CONTAINER */
 .container {
   width: 100%;
-  max-width: 1230px;
+  max-width: 1294px;
   margin: 0 auto;
   padding: 0 15px;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/* HEADER STYLE START */
+.site-header {
+  padding-top: 30px;
+  padding-bottom: 29px;
+  font-family: "Readex Pro", sans-serif;
+}
+.site-header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.site-header__nav-list {
+  display: flex;
+  align-items: center;
+  gap: 33px;
+}
+.site-header__nav-link {
+  color: #000;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+.site-header__nav-link:hover {
+  opacity: 0.8;
+}
+.site-header__save {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+.site-header__save-logo {
+  font-size: 24px;
+  cursor: pointer;
+  transition: 0.3;
+}
+.site-header__save-logo:hover {
+  opacity: 0.8;
+}
+.site-header__menu {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .site-header {
+    position: relative;
+    width: 100%;
+  }
+  .site-header__nav {
+    width: 60%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    padding-top: 70px;
+    padding-bottom: 20px;
+    z-index: 99;
+    transition: 1s;
+    background: linear-gradient(to top, rgb(2, 0, 36) 0%, rgb(163, 189, 176) 80%, rgba(0, 57, 255, 0.1125584023) 100%);
+    background-color: #fff;
+  }
+  .site-header__nav-list {
+    flex-direction: column;
+  }
+  .site-header__menu {
+    display: block;
+    margin-left: 30px;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    background-color: transparent;
+    z-index: 100;
+  }
+}
+.show {
+  right: 0;
+}
+
+.hidden {
+  right: -100%;
+}
+
+/* HEADER STYLE END *//*# sourceMappingURL=main.css.map */
