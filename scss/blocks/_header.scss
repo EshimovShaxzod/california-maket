@@ -1,0 +1,97 @@
+/* HEADER STYLE START */ 
+.site-header{
+    padding-top: 30px;
+    padding-bottom: 29px;
+    font-family: $fontFamily;
+    
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    &__nav{
+        &-list{
+            display: flex;
+            align-items: center;
+            gap: 33px;
+        }
+        
+        &-link{
+            color: #000;
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 16.8px;
+            text-transform: uppercase;
+            transition: .3s;
+            
+            &:hover{
+                opacity: .8;
+            }
+        }
+    }
+    
+    &__save{
+        display: flex;
+        align-items: center;
+        gap: 13px;
+        
+        &-logo{
+            font-size: 24px;
+            cursor: pointer;
+            transition: .3;
+            
+            &:hover{
+                opacity: .8;
+            }
+        }
+    }
+    
+    &__menu{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .site-header{
+        position: relative;
+        width: 100%;
+        
+        &__nav{
+            width: 60%;
+            height: 100vh;
+            position: absolute;
+            top:0;
+            right: -100%;
+            padding-top: 70px;
+            padding-bottom: 20px;
+            z-index: 99;
+            transition: 1s;
+            background: linear-gradient(to top, rgba(2,0,36,1) 0%, rgba(163,189,176,1) 80%, rgba(0,57,255,0.11255840226715685) 100%);
+            background-color: #fff;
+            &-list{
+                flex-direction: column;
+            }
+        }
+        
+        &__menu{
+            display: block;
+            margin-left: 30px;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            background-color: transparent;
+            z-index: 100;
+        }
+    }
+}
+
+.show{
+    right:0;
+}
+
+.hidden{
+    right: -100%;
+}
+/* HEADER STYLE END */ 
