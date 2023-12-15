@@ -405,7 +405,7 @@ a {
   gap: 13px;
 }
 .site-header__save-logo {
-  font-size: 24px;
+  font-size: 28px;
   cursor: pointer;
   transition: 0.3;
 }
@@ -422,11 +422,12 @@ a {
     width: 100%;
   }
   .site-header__nav {
-    width: 60%;
+    display: none;
+    width: 70%;
     height: 100vh;
     position: absolute;
     top: 0;
-    right: -100%;
+    right: -70%;
     padding-top: 70px;
     padding-bottom: 20px;
     z-index: 99;
@@ -441,7 +442,7 @@ a {
     display: block;
     margin-left: 30px;
     border: none;
-    font-size: 24px;
+    font-size: 32px;
     cursor: pointer;
     background-color: transparent;
     z-index: 100;
@@ -449,10 +450,99 @@ a {
 }
 .show {
   right: 0;
+  display: block;
 }
 
 .hidden {
-  right: -100%;
+  right: -70%;
+  display: none;
 }
 
-/* HEADER STYLE END *//*# sourceMappingURL=main.css.map */
+/* HEADER STYLE END */
+/* HERO STYLE START */
+.hero {
+  width: 100%;
+  margin-bottom: 56px;
+  font-family: "Readex Pro", sans-serif;
+}
+.hero-wrapper {
+  padding-top: 145px;
+  padding-bottom: 127px;
+  border-radius: 32px;
+  background-color: #DCE5E2;
+  background-image: url("../assets/img/Iphone-img.png");
+  background-position: calc(50% + 330px) 38px;
+  background-repeat: no-repeat;
+}
+.hero-content {
+  width: 100%;
+  max-width: 588px;
+  padding-left: 56px;
+}
+.hero-content__title {
+  margin-bottom: 19px;
+  color: #000;
+  font-size: 58px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 69.6px;
+}
+.hero-content__desc {
+  margin-bottom: 30px;
+  color: #000;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 24.2px;
+}
+.hero-content__btn {
+  padding: 14px 53px;
+  color: #000;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  line-height: 21.6px;
+  text-transform: capitalize;
+  border-radius: 200px;
+  border: 1px solid #000;
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.hero-content__btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+  .hero-wrapper {
+    background-position: 50% 0px;
+  }
+  .hero-content {
+    max-width: 100%;
+    padding: 390px 20px 0 20px;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 567px) {
+  .hero-wrapper {
+    background-size: contain;
+    background-position: 50% 30px;
+  }
+  .hero-content {
+    padding-top: 320px;
+  }
+  .hero-content__title {
+    font-size: 45px;
+    line-height: 54px;
+  }
+}
+@media only screen and (max-width: 460px) {
+  .hero-content {
+    padding-top: 250px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .hero-content {
+    padding-top: 200px;
+  }
+}
+/* HERO STYLE END *//*# sourceMappingURL=main.css.map */

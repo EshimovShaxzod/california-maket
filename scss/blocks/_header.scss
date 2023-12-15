@@ -38,7 +38,7 @@
         gap: 13px;
         
         &-logo{
-            font-size: 24px;
+            font-size: 28px;
             cursor: pointer;
             transition: .3;
             
@@ -59,17 +59,19 @@
         width: 100%;
         
         &__nav{
-            width: 60%;
+            display: none;
+            width: 70%;
             height: 100vh;
             position: absolute;
             top:0;
-            right: -100%;
+            right: -70%;
             padding-top: 70px;
             padding-bottom: 20px;
             z-index: 99;
             transition: 1s;
             background: linear-gradient(to top, rgba(2,0,36,1) 0%, rgba(163,189,176,1) 80%, rgba(0,57,255,0.11255840226715685) 100%);
             background-color: #fff;
+
             &-list{
                 flex-direction: column;
             }
@@ -79,7 +81,7 @@
             display: block;
             margin-left: 30px;
             border: none;
-            font-size: 24px;
+            font-size: 32px;
             cursor: pointer;
             background-color: transparent;
             z-index: 100;
@@ -89,9 +91,11 @@
 
 .show{
     right:0;
+    display: block;
 }
 
 .hidden{
-    right: -100%;
+    right: -70%;
+    display: none;
 }
 /* HEADER STYLE END */ 
