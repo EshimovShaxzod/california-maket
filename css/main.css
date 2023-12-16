@@ -315,7 +315,7 @@ template {
   font-family: "Readex Pro";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/readex-pro-v21-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("../assets/fonts/readex-pro-v21-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* inter-regular - latin */
 @font-face {
@@ -323,7 +323,7 @@ template {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/inter-v13-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("../assets/fonts/inter-v13-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 * {
   box-sizing: border-box;
@@ -471,7 +471,8 @@ a {
   border-radius: 32px;
   background-color: #DCE5E2;
   background-image: url("../assets/img/Iphone-img.png");
-  background-position: calc(50% + 330px) 38px;
+  background-position: calc(50% + 300px) 38px;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 .hero-content {
@@ -483,7 +484,6 @@ a {
   margin-bottom: 19px;
   color: #000;
   font-size: 58px;
-  font-style: normal;
   font-weight: 400;
   line-height: 69.6px;
 }
@@ -518,6 +518,16 @@ a {
   }
   .hero-content {
     max-width: 100%;
+    padding: 440px 20px 0 20px;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 660px) {
+  .hero-wrapper {
+    background-position: 50% 0px;
+  }
+  .hero-content {
+    max-width: 100%;
     padding: 390px 20px 0 20px;
     text-align: center;
   }
@@ -545,4 +555,135 @@ a {
     padding-top: 200px;
   }
 }
-/* HERO STYLE END *//*# sourceMappingURL=main.css.map */
+/* HERO STYLE END */
+/* CATEGORIES STYLE START */
+.categories {
+  margin-bottom: 60px;
+  font-family: "Readex Pro", sans-serif;
+}
+.categories-title {
+  margin-bottom: 9px;
+  color: #000;
+  text-align: center;
+  font-size: 42px;
+  line-height: 52.5px;
+}
+.categories-desc {
+  margin-bottom: 56px;
+  color: #000;
+  text-align: center;
+  font-size: 14px;
+  line-height: 16.8px;
+}
+.categories-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.categories-content__item:first-child {
+  display: inline-block;
+  width: 100%;
+  max-width: 639px;
+  margin-bottom: 72px;
+  padding: 377px 42px 10px 42px;
+  background-image: url("../assets/img/noutbuk-img.png");
+  background-position: calc(50% - 40px) 0px;
+  background-repeat: no-repeat;
+  box-shadow: 0px 4px 35px 0px rgba(0, 0, 0, 0.25);
+  background-color: #FFF;
+  text-align: right;
+}
+.categories-content__text {
+  margin-top: 18px;
+  font-family: "Inter";
+  font-size: 15px;
+  line-height: 19.2px;
+}
+.categories-content__title {
+  color: #000;
+  text-align: right;
+  font-size: 32px;
+  line-height: 38.4px;
+  font-weight: 400;
+}
+.categories-content__item:nth-child(2) {
+  display: inline-block;
+  width: 100%;
+  max-width: 639px;
+  margin-bottom: 30px;
+  padding: 70px 42px 56px 42px;
+  background-image: url("../assets/img/watch.png");
+  background-size: contain;
+  background-position: calc(50% - 90px) 0px;
+  background-repeat: no-repeat;
+  box-shadow: 0px 4px 35px 0px rgba(0, 0, 0, 0.25);
+  background-color: #FFF;
+  text-align: right;
+}
+.categories-content:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 312px;
+  background-image: url("../assets/img/double-iphone.png");
+  background-position: calc(50% + 60px) 180px;
+  background-repeat: no-repeat;
+  box-shadow: 0px 4px 35px 0px rgba(0, 0, 0, 0.25);
+}
+.categories-content__phone-text {
+  padding-top: 553px;
+  color: #000;
+  text-align: center;
+  font-size: 15px;
+  line-height: 19.2px;
+  font-family: "Inter", sans-serif;
+}
+.categories-content__life-title {
+  padding-bottom: 144px;
+  color: #000;
+  text-align: center;
+  font-size: 32px;
+  line-height: 38.4px;
+  font-weight: 400;
+}
+.categories-content:nth-child(3) {
+  width: 100%;
+  max-width: 312px;
+  background-image: url("../assets/img/planshet.png");
+  background-position: 50% 250px;
+  background-repeat: no-repeat;
+  box-shadow: 0px 4px 35px 0px rgba(0, 0, 0, 0.25);
+}
+.categories-content__tablet-text {
+  padding-top: 104px;
+  text-align: center;
+  font-family: "Inter";
+  font-size: 16px;
+  line-height: 19.2px;
+}
+.categories-content__work-title {
+  padding-bottom: 592px;
+  text-align: center;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 38.4px;
+}
+
+@media only screen and (max-width: 838px) {
+  .categories-content:first-child {
+    display: block;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 670px) {
+  .categories-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/* CATEGORIES STYLE END *//*# sourceMappingURL=main.css.map */
