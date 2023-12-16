@@ -1,3 +1,4 @@
+/*  SELLED STYLE START */
 /*# sourceMappingURL=main.css.map */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -565,14 +566,20 @@ a {
   margin-bottom: 9px;
   color: #000;
   text-align: center;
+  font-family: "Readex Pro", sans-serif;
   font-size: 42px;
+  font-style: normal;
+  font-weight: 400;
   line-height: 52.5px;
 }
 .categories-desc {
   margin-bottom: 56px;
   color: #000;
   text-align: center;
-  font-size: 14px;
+  font-family: "Readex Pro", sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
   line-height: 16.8px;
 }
 .categories-wrapper {
@@ -686,4 +693,103 @@ a {
     align-items: center;
   }
 }
-/* CATEGORIES STYLE END *//*# sourceMappingURL=main.css.map */
+/* CATEGORIES STYLE END */
+/* SELLED STYLE START */
+.selled {
+  margin-bottom: 47px;
+  font-family: "Readex Pro", sans-serif;
+}
+.selled-title {
+  color: #000;
+  text-align: center;
+  font-family: "Readex Pro", sans-serif;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 52.5px;
+  margin-bottom: 9px;
+}
+.selled-desc {
+  color: #000;
+  text-align: center;
+  font-family: "Readex Pro", sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16.8px;
+  margin-bottom: 59px;
+}
+.selled-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.selled-list__item {
+  width: 100%;
+  max-width: 302px;
+}
+.selled-list__img {
+  margin-bottom: 23px;
+}
+.selled-list__title {
+  margin-bottom: 9px;
+  color: #000;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 27.5px;
+}
+.selled-list__desc {
+  margin-bottom: 25px;
+  color: #4B4B4B;
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  padding-right: 41px;
+}
+.selled-list__price {
+  color: #000;
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.6px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .selled-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .selled-list__item {
+    margin-bottom: 50px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .selled-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  .selled-list__item {
+    max-width: 350px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  .selled-list__desc {
+    padding-right: 0;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .selled-list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .selled-list__item {
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+  .selled-list__desc {
+    padding: 0 13px;
+  }
+}
+/* SELLED STYLE END *//*# sourceMappingURL=main.css.map */
