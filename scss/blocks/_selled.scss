@@ -1,0 +1,100 @@
+/* SELLED STYLE START */ 
+.selled{
+    margin-bottom: 47px;
+    font-family: $fontFamily;
+
+    &-title{
+        @include section-title;
+        margin-bottom: 9px;
+    }
+
+    &-desc{
+        @include section-desc;
+        margin-bottom: 59px;
+    }
+
+    &-list{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &__item{
+            width: 100%;
+            max-width: 302px;
+        }
+
+        &__img{
+            margin-bottom: 23px;
+        }
+
+        &__title{
+            @include selled-item__title;
+        }
+
+        &__desc{
+            @include selled-item__desc;
+            padding-right: 41px;
+        }
+
+        &__price{
+            @include selled-item__price;
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .selled{
+
+        &-list{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+
+            &__item{
+                margin-bottom: 50px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .selled{
+
+        &-list{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+
+            &__item{
+                max-width: 350px;
+                margin-bottom: 50px;
+                text-align: center;
+            }
+
+            &__desc{
+                padding-right: 0;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .selled{
+
+        &-list{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+
+            &__item{
+                max-width: 100%;
+                margin-bottom: 10px;
+            }
+
+            &__desc{
+                padding: 0 13px;
+            }
+
+        }
+    }
+}
+
+/* SELLED STYLE END */ 

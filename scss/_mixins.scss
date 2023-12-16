@@ -1,0 +1,46 @@
+@mixin section-title{
+    color: #000;
+    text-align: center;
+    font-family: $fontFamily;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 52.5px; 
+}
+
+@mixin section-desc{
+    color: #000;
+    text-align: center;
+    font-family: $fontFamily;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16.8px;
+}
+
+/*  SELLED STYLE START */ 
+
+@mixin selled-item__title{
+    margin-bottom: 9px;
+    color: #000;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 27.5px;
+}
+
+@mixin selled-item__desc{
+    margin-bottom: 25px;
+    color: #4B4B4B;
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+}
+
+@mixin selled-item__price{
+    color: #000;
+    font-family: 'Inter';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.6px;
+}
