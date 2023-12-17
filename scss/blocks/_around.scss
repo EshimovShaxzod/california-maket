@@ -1,0 +1,110 @@
+/*   AROUND STYLE START */ 
+.around{
+    width: 100%;
+    margin-bottom: 28px;
+    font-family: $fontFamily;
+    
+    &-title{
+        @include section-title;
+        margin-bottom: 9px;
+    }
+    
+    &-desc{
+        @include section-desc;
+        margin-bottom: 56px;
+    }
+    
+    &-list{
+        // display: flex;
+        // align-items: center;
+        // flex-wrap: wrap;
+        // justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 28px;
+        
+        &__item{
+            width: 100%;
+            max-width: 413px;
+            text-align: center;
+            
+            &-text{
+                color: #000;
+                font-size: 13px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 16.8px;
+            }
+            
+            &-title{
+                margin-bottom: 30px;
+                color: #000;
+                font-size: 28px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 35px;
+            }
+            
+            &-btn{
+                display: block;
+                margin: 0 auto 30px auto;
+                padding: 14px 63px;
+                color: #000;
+                font-family: 'Inter';
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 21.6px;
+                text-transform: capitalize;
+                border-radius: 200px;
+                border: 1px solid #000;
+                background-color: transparent;
+                transition: .4s;
+                cursor: pointer;
+
+                &:hover{
+                    background-color: #000;
+                    color: #fff;
+                }
+            }
+
+            &-img{
+                width: 100%;
+                max-width: 259px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:936px){
+    .around{
+
+        &-list{
+            grid-template-columns: repeat(2, 1fr);
+
+            &__item:not(:last-child){
+                margin-bottom: 40px;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width:576px){
+    .around{
+
+        &-list{
+            grid-template-columns: repeat(1, 1fr);
+
+            &__item{
+                margin: 0 auto;
+            }
+
+            &__item:not(:last-child){
+                margin-bottom: 40px;
+            }
+        }
+    }
+}
+
+/*   AROUND STYLE END */ 

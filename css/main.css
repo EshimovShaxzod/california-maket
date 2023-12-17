@@ -792,4 +792,101 @@ a {
     padding: 0 13px;
   }
 }
-/* SELLED STYLE END *//*# sourceMappingURL=main.css.map */
+/* SELLED STYLE END */
+/*   AROUND STYLE START */
+.around {
+  width: 100%;
+  margin-bottom: 28px;
+  font-family: "Readex Pro", sans-serif;
+}
+.around-title {
+  color: #000;
+  text-align: center;
+  font-family: "Readex Pro", sans-serif;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 52.5px;
+  margin-bottom: 9px;
+}
+.around-desc {
+  color: #000;
+  text-align: center;
+  font-family: "Readex Pro", sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16.8px;
+  margin-bottom: 56px;
+}
+.around-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+.around-list__item {
+  width: 100%;
+  max-width: 413px;
+  text-align: center;
+}
+.around-list__item-text {
+  color: #000;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16.8px;
+}
+.around-list__item-title {
+  margin-bottom: 30px;
+  color: #000;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 35px;
+}
+.around-list__item-btn {
+  display: block;
+  margin: 0 auto 30px auto;
+  padding: 14px 63px;
+  color: #000;
+  font-family: "Inter";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21.6px;
+  text-transform: capitalize;
+  border-radius: 200px;
+  border: 1px solid #000;
+  background-color: transparent;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.around-list__item-btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+.around-list__item-img {
+  width: 100%;
+  max-width: 259px;
+}
+
+@media only screen and (max-width: 936px) {
+  .around-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .around-list__item:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .around-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .around-list__item {
+    margin: 0 auto;
+  }
+  .around-list__item:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}
+/*   AROUND STYLE END *//*# sourceMappingURL=main.css.map */
